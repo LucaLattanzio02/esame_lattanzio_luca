@@ -1,5 +1,5 @@
 import { useTracks } from "../../Hooks/useTracks"
-import { Event } from "../Event/Event";
+import { Track } from "../Track/Track";
 
 export const TrackList = () => {
 
@@ -8,7 +8,7 @@ const {trackList} = useTracks();
     return(
 
         <div>
-            {trackList && trackList.map(item => <Event event={item} key={item.id}></Event>)}
+            {trackList !== undefined && trackList.map(item => <Track track={item} key={item.id}></Track>)}
         </div>
     )
 

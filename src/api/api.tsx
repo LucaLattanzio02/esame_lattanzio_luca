@@ -10,13 +10,13 @@ export const getApiEvents =  async () => {
 }
 
 export const getApiTrack =  async () => {
-    const response = await axios.get("http://localhost:3006/track");
-    const dati : TrackApiType = response.data;
+    const response = await axios.get("http://localhost:3006/tracks");
+    const dati : TrackApiType[] = response.data;
     return dati;     
 }
 
 export const getApiSpeaker =  async () => {
     const response = await axios.get("http://localhost:3006/speaker");
-    const dati : SpeakerApiType = response.data;
+    const dati : SpeakerApiType[] = response.data;
     return dati;     
 }

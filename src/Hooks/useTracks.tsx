@@ -4,7 +4,7 @@ import { TrackApiType } from "../Type/TrackApiType";
 
 export const useTracks = () => {
 
-    const [trackList, setTrackList] = useState<TrackApiType>();
+    const [trackList, setTrackList] = useState<TrackApiType[]>();
 
     const fetchTrackList = useCallback(async() => {
         const list = await getApiTrack();

@@ -1,20 +1,19 @@
-import { Card, CardBody, VStack } from "@chakra-ui/react";
-import { EventApiType } from "../../Type/EventApiType"
+import { EventApiType } from "../../Type/EventApiType";
 
 type Eventprops = {
-    event: EventApiType;
+    events: EventApiType;
 }
 
-export const Event = ({event}:Eventprops) => {
+export const Event = ({events} : Eventprops) => {
 
     return(
-        <Card>
-            <CardBody>
-                <VStack>
-                    <p>{event.title}</p>
-                    <p>{event.description}</p>
-                </VStack>
-            </CardBody>
-        </Card>
-    )
+        <div>
+
+            <p> {events.title} </p> <br></br>
+            <p> {events.description} </p>
+
+        </div>
+    );
+
+
 }
