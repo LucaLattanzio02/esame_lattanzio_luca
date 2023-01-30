@@ -1,11 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { TrackList } from "./components/TrackList/TrackList";
 
 function App() {
   return (
-    <div className="App">
-      ciao
+    <div>
+      <TrackList />
     </div>
   );
 }
