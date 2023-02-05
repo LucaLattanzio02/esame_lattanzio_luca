@@ -11,4 +11,5 @@ export const SpeakerList = () => {
             {speakerList !== undefined && speakerList.map(item => <Speaker speakers={item} key={item.id}></Speaker>)}
         </div>
     )
+    
 }
