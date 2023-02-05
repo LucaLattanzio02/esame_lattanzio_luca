@@ -1,0 +1,28 @@
+#GET --> per richiesta, 
+#POST --> per inserimento, 
+#PUT --> modifica tramite replace, 
+#PATCH --> per gli aggiornamenti di differenza, 
+#DELETE --> per eliminare
+
+@id = 1
+@id_event=1
+
+# ELENCO DEI POST
+GET http://localhost:3006/events/1 HTTP/1.1
+
+###
+
+# SINGOLO ELEMENTO
+GET http://localhost:3006/events/1 HTTP/1.1
+
+###
+
+# ELENCO DEI POST
+GET http://localhost:3006/speakers/{{id_event}} HTTP/1.1
+
+###
+
+# ELENCO DEI POST
+GET http://localhost:3006/tracks/{{id_event}} HTTP/1.1
+
+###
