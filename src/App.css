@@ -1,5 +1,12 @@
-
 body{
-  text-align: center;
   background-color: rgb(0, 0, 0);
+}
+
+.divclear{
+  clear: both;
+}
+
+.hr{
+  margin-left: 200px;
+  margin-right: 200px;
 }

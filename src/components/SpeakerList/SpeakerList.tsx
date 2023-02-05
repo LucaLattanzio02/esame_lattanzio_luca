@@ -8,8 +8,7 @@ export const SpeakerList = () => {
     return(
 
         <div>
-            {speakerList !== undefined && speakerList.map(item => <Speaker speaker={item} key={item.id}></Speaker>)}
+            {speakerList !== undefined && speakerList.map(item => <Speaker speakers={item} key={item.id}></Speaker>)}
         </div>
     )
-
 }

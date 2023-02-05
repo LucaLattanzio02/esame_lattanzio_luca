@@ -1,22 +1,19 @@
 import { useState, useCallback, useEffect } from "react";
-import { getApiSpeaker} from "../api/api";
+import { getApiSpeaker } from "../api/api";
 import { SpeakerApiType } from "../Type/SpeakerApiType";
 
 export const useSpeakers = () => {
+  const [speakerList, setSpeakerList] = useState<SpeakerApiType[]>();
 
-    const [speakerList, setSpeakerList] = useState<SpeakerApiType[]>();
+  const fetchTrackList = useCallback(async () => {
+    const list = await getApiSpeaker();
+    setSpeakerList(list);
+    return list;
+  }, []);
 
-    const fetchTrackList = useCallback(async() => {
-        const list = await getApiSpeaker();
-        setSpeakerList(list);
-        return list;
-    }, [])
+  useEffect(() => {
+    fetchTrackList();
+  }, [fetchTrackList]);
 
-
-    useEffect(() => {
-        fetchTrackList();
-    }, [fetchTrackList])
-
-    return {speakerList, setSpeakerList}
-
-}
+  return { speakerList, setSpeakerList };
+};

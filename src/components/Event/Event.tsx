@@ -1,4 +1,6 @@
+import { Container } from "@chakra-ui/react";
 import { EventApiType } from "../../Type/EventApiType";
+import { Text } from "@chakra-ui/react";
 
 type Eventprops = {
     events: EventApiType;
@@ -7,13 +9,11 @@ type Eventprops = {
 export const Event = ({events} : Eventprops) => {
 
     return(
-        <div>
+        <Container textAlign="center" maxW="1600px">
 
-            <p> {events.title} </p> <br></br>
-            <p> {events.description} </p>
+            <Text fontSize="30px" color="red"> {events.title} </Text>
+            <Text fontSize="15px" color="white" mr="50px" ml="50px"> {events.description} </Text>
 
-        </div>
+        </Container>
     );
-
-
 }

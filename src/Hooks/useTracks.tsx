@@ -1,21 +1,19 @@
-import { useCallback, useEffect, useState } from "react"
+import { useCallback, useEffect, useState } from "react";
 import { getApiTrack } from "../api/api";
 import { TrackApiType } from "../Type/TrackApiType";
 
 export const useTracks = () => {
+  const [trackList, setTrackList] = useState<TrackApiType[]>();
 
-    const [trackList, setTrackList] = useState<TrackApiType[]>();
+  const fetchTrackList = useCallback(async () => {
+    const list = await getApiTrack();
+    setTrackList(list);
+    return list;
+  }, []);
 
-    const fetchTrackList = useCallback(async() => {
-        const list = await getApiTrack();
-        setTrackList(list);
-        return list;
-    }, [])
+  useEffect(() => {
+    fetchTrackList();
+  }, [fetchTrackList]);
 
-    useEffect(() => {
-        fetchTrackList();
-    }, [fetchTrackList])
-
-    return {trackList, setTrackList}
-
-}
+  return { trackList, setTrackList };
+};

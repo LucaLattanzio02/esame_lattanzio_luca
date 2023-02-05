@@ -1,6 +1,7 @@
-import { Box, HStack, Text, VStack } from "@chakra-ui/react";
-import { Image } from "@chakra-ui/react";
+import { Text, Image, Card, CardBody, Heading, Stack } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import { TrackApiType } from "../../Type/TrackApiType";
+import { BiTimeFive } from "react-icons/bi";
 
 type Trackprops = {
   track: TrackApiType;
@@ -8,32 +9,38 @@ type Trackprops = {
 
 export const Track = ({ track }: Trackprops) => {
   return (
-    <Box>
-      <VStack spacing="5px" alignItems="center" mt="50px">
-        <Box color="white" fontSize="20px">
-           {track.data}
-        </Box>
-        <HStack mt="20px">
-          <Text color="white" mr="50px">
-            {track.time}
-          </Text>
-          <Image
-            src={track.image}
-            h="200px"
-            w="200px"
-            borderRadius="10%"
-            objectFit="cover"
-          />
-          <VStack spacing="10px" alignItems="center">
-            <Text color="white" as="b">
-              {track.title}
-            </Text>
-            <Text color="white" as="i">
+    <Card
+      direction={{ base: "column", sm: "row" }}
+      overflow="hidden"
+      variant="outline"
+      mt="60px"
+    >
+      <Text color="white" mt="90px" ml="280px">
+        <BiTimeFive /> {track.time}{" "}
+      </Text>
+
+      <Image
+        objectFit="cover"
+        w="200px"
+        h="200px"
+        src={track.image}
+        alt="img"
+        ml="10px"
+        borderRadius="10px"
+      />
+      <Stack>
+        <CardBody>
+          <Heading size="md" color="white" ml="30px">
+            {track.title}
+          </Heading>
+
+          <Container maxW="700px">
+            <Text py="2" color="white" ml="30px">
               {track.description}
             </Text>
-          </VStack>
-        </HStack>
-      </VStack>
-    </Box>
+          </Container>
+        </CardBody>
+      </Stack>
+    </Card>
   );
 };
