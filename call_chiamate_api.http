@@ -5,24 +5,33 @@
 #DELETE --> per eliminare
 
 @id = 1
-@id_event=1
 
-# ELENCO DEI POST
-GET http://localhost:3006/events/1 HTTP/1.1
-
-###
-
-# SINGOLO ELEMENTO
-GET http://localhost:3006/events/1 HTTP/1.1
+# ELENCO DEGLI EVENTI
+GET http://localhost:3006/events HTTP/1.1
 
 ###
 
-# ELENCO DEI POST
-GET http://localhost:3006/speakers/{{id_event}} HTTP/1.1
+# SINGOLO EVENTO
+GET http://localhost:3006/events/{{id}} HTTP/1.1
 
 ###
 
-# ELENCO DEI POST
-GET http://localhost:3006/tracks/{{id_event}} HTTP/1.1
+# ELENCO DEGLI TRACKS
+GET http://localhost:3006/tracks HTTP/1.1
+
+###
+
+# SINGOLO TRACK
+GET http://localhost:3006/tracks/{{id}} HTTP/1.1
+
+###
+
+# ELENCO DEGLI SPEAKERS
+GET http://localhost:3006/speakers HTTP/1.1
+
+###
+
+# SINGOLO SPEAKER
+GET http://localhost:3006/speakers/{{id}} HTTP/1.1
 
 ###
