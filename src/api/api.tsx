@@ -10,7 +10,19 @@ export const getApiEvents =  async () => {
 }
 
 export const getApiTrack =  async () => {
-    const response = await axios.get(`http://localhost:3006/DateTracks`);
+    const response = await axios.get(`http://localhost:3006/DateTracks?id=1`);
+    const dati : TracksDataType[] = response.data;
+    return dati;     
+}
+
+export const getApiTrack2 =  async () => {
+    const response = await axios.get(`http://localhost:3006/DateTracks?id=2`);
+    const dati : TracksDataType[] = response.data;
+    return dati;     
+}
+
+export const getApiTrack3 =  async () => {
+    const response = await axios.get(`http://localhost:3006/DateTracks?id=3`);
     const dati : TracksDataType[] = response.data;
     return dati;     
 }

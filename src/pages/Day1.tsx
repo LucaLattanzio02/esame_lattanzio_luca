@@ -4,31 +4,28 @@ import { EventList } from "../components/EventList/EventList";
 import { SpeakerList } from "../components/SpeakerList/SpeakerList";
 import { TrackList } from "../components/TrackList/TrackList";
 
-function Day1 (){
-    return(
-        <Box>
+function Day1() {
+  return (
+    <Box>
+      <EventList />
 
-            <EventList />
+      <Text textAlign="center" color="white" fontSize="25px" mt="50px">
+        JSWORLD CONFERENCE 2023
+      </Text>
 
-            <Text textAlign="center" color="white" fontSize="25px" mt="50px">
-                JSWORLD CONFERENCE 2023
-            </Text>
+      <DateLink />
 
-            <DateLink/>
+      <hr className="hr"></hr>
 
-            <hr className="hr"></hr>
+      <TrackList />
 
-            <TrackList/>
+      <Text textAlign="center" color="White" fontSize="25px" mt="100px">
+        SPEAKERS
+      </Text>
 
-            <Text textAlign="center" color="White" fontSize="25px" mt="100px">
-                SPEAKERS
-            </Text>
-
-            <SpeakerList/>
-
-        </Box>
-
-    );
+      <SpeakerList />
+    </Box>
+  );
 }
 
 export default Day1;

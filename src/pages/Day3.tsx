@@ -2,6 +2,7 @@ import { Box, Text } from "@chakra-ui/react";
 import { DateLink } from "../components/DateLink/DateLink";
 import { EventList } from "../components/EventList/EventList";
 import { SpeakerList } from "../components/SpeakerList/SpeakerList";
+import { TrackList3 } from "../components/TrackList/TrackList3";
 
 
 function Day3() {
@@ -18,7 +19,7 @@ function Day3() {
 
       <hr className="hr"></hr>
       
-      <Text color="white" textAlign="center"> Hola </Text>
+      <TrackList3/>
 
       <Text textAlign="center" color="White" fontSize="25px" mt="100px">
         SPEAKERS
