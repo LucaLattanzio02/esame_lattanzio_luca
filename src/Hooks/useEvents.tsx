@@ -3,9 +3,9 @@ import { getApiEvents } from "../api/api";
 
 export const useEvents = () => {
   
-  const {data} = useQuery('eventList', getApiEvents)
+  const {isLoading, isError, data, error} = useQuery('eventList', getApiEvents)
 
-  return {data};
+  return {isLoading, isError, data, error};
   /*
   const [EventList, setEventList] = useState<EventApiType[]>();
 

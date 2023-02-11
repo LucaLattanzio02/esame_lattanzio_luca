@@ -1,7 +1,7 @@
 import axios from "axios";
 import { EventApiType } from "../Type/EventApiType";
 import { SpeakerApiType } from "../Type/SpeakerApiType";
-import { TrackApiType } from "../Type/TrackApiType";
+import { TracksDataType } from "../Type/TrackApiType";
 
 export const getApiEvents =  async () => {
     const response = await axios.get("http://localhost:3006/events");
@@ -10,8 +10,8 @@ export const getApiEvents =  async () => {
 }
 
 export const getApiTrack =  async () => {
-    const response = await axios.get("http://localhost:3006/tracks/");
-    const dati : TrackApiType[] = response.data;
+    const response = await axios.get(`http://localhost:3006/DateTracks`);
+    const dati : TracksDataType[] = response.data;
     return dati;     
 }
 

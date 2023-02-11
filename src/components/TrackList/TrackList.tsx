@@ -7,7 +7,7 @@ import {
   AlertDescription,
 } from "@chakra-ui/react";
 import { useTracks } from "../../Hooks/useTracks";
-import { Track } from "../Track/Track";
+import { DateTrack } from "../DateTrack/DateTrack";
 
 export const TrackList = () => {
   const { isLoading, isError, data, error } = useTracks();
@@ -36,7 +36,7 @@ export const TrackList = () => {
       )}
 
       {data !== undefined &&
-        data.map((item) => <Track track={item} key={item.id}></Track>)}
+       data !== null && data.map(item  => <DateTrack datetracks={item} key={item.id}></DateTrack>)}
     </VStack>
   );
 };

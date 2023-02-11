@@ -1,13 +1,11 @@
-import { useQuery } from "@chakra-ui/react";
-import { useState, useCallback, useEffect } from "react";
+import { useQuery } from "react-query";
 import { getApiSpeaker } from "../api/api";
-import { SpeakerApiType } from "../Type/SpeakerApiType";
 
 export const useSpeakers = () => {
 
-  const {data} = useQuery("speakerList", getApiSpeaker)
+  const {isLoading, isError, data, error} = useQuery('speakerList', getApiSpeaker)
 
-  return {data}
+  return {isLoading, isError, data, error};
 
   /*
   const [speakerList, setSpeakerList] = useState<SpeakerApiType[]>();

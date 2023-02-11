@@ -2,7 +2,6 @@ import { Text, Image, Card, CardBody, Heading, Stack } from "@chakra-ui/react";
 import { Container } from "@chakra-ui/react";
 import { TrackApiType } from "../../Type/TrackApiType";
 import { BiTimeFive } from "react-icons/bi";
-import {AiFillCalendar} from "react-icons/ai"
 
 type Trackprops = {
   track: TrackApiType;
@@ -16,9 +15,8 @@ export const Track = ({ track }: Trackprops) => {
       variant="outline"
       mt="60px"
     >
-      <Text color="white" mt="90px" ml="280px">
+      <Text color="white" mt="90px" ml="140px">
         <BiTimeFive /> {track.time} <br></br>
-        <AiFillCalendar /> {track.date}
       </Text>
 
       <Image

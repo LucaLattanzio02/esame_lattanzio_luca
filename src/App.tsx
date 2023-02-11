@@ -1,30 +1,22 @@
 import "./App.css";
-import { SpeakerList } from "./components/SpeakerList/SpeakerList";
-import { TrackList } from "./components/TrackList/TrackList";
-import { Text } from "@chakra-ui/react";
-import { EventList } from "./components/EventList/EventList";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
+import Day1 from "./pages/Day1";
+import Day2 from "./pages/Day2";
+import Day3 from "./pages/Day3";
 
 const queryClient = new QueryClient();
 
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <EventList />
-
-      <Text textAlign="center" color="white" fontSize="25px" mt="50px">
-        JSWORLD CONFERENCE 2023
-      </Text>
-
-      <hr className="hr"></hr>
-
-      <TrackList />
-
-      <Text textAlign="center" color="White" fontSize="25px" mt="100px">
-        SPEAKERS
-      </Text>
-
-      <SpeakerList />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Day1 />} />
+          <Route path="/Day2" element={<Day2 />} />
+          <Route path="/Day3" element={<Day3 />} />
+        </Routes>
+      </Router>
     </QueryClientProvider>
   );
 }
