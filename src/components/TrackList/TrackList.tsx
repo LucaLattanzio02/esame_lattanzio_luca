@@ -1,14 +1,42 @@
-import { useTracks } from "../../Hooks/useTracks"
+import {
+  VStack,
+  Spinner,
+  Alert,
+  AlertIcon,
+  AlertTitle,
+  AlertDescription,
+} from "@chakra-ui/react";
+import { useTracks } from "../../Hooks/useTracks";
 import { Track } from "../Track/Track";
 
 export const TrackList = () => {
+  const { isLoading, isError, data, error } = useTracks();
 
-const {trackList} = useTracks();
+  return (
+    <VStack>
+      {isLoading && (
+        <Spinner
+          thickness="4px"
+          speed="0.65s"
+          emptyColor="gray.200"
+          color="blue.500"
+          size="xl"
+        />
+      )}
 
-    return(
+      {isError && (
+        <Alert status="error">
+          <AlertIcon />
+          <AlertTitle>Si è verificato un errore!</AlertTitle>
+          <AlertDescription>
+            Contattare lo stagista:
+            {error instanceof Error ? error.message : "Errore generico"}
+          </AlertDescription>
+        </Alert>
+      )}
 
-        <div>
-            {trackList !== undefined && trackList.map(item => <Track track={item} key={item.id}></Track>)}
-        </div>
-    )
-}
+      {data !== undefined &&
+        data.map((item) => <Track track={item} key={item.id}></Track>)}
+    </VStack>
+  );
+};

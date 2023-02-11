@@ -3,12 +3,12 @@ import { Speaker } from "../Speaker/Speaker";
 
 export const SpeakerList = () => {
 
-    const {speakerList} = useSpeakers();
+    const {data} = useSpeakers();
 
     return(
 
         <div>
-            {speakerList !== undefined && speakerList.map(item => <Speaker speakers={item} key={item.id}></Speaker>)}
+            {data !== undefined && data.map(item => <Speaker speakers={item} key={item.id}></Speaker>)}
         </div>
     )
     

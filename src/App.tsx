@@ -1,12 +1,15 @@
 import "./App.css";
 import { SpeakerList } from "./components/SpeakerList/SpeakerList";
 import { TrackList } from "./components/TrackList/TrackList";
-import { Box, Text } from "@chakra-ui/react";
+import { Text } from "@chakra-ui/react";
 import { EventList } from "./components/EventList/EventList";
+import { QueryClient, QueryClientProvider } from "react-query";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <Box>
+    <QueryClientProvider client={queryClient}>
       <EventList />
 
       <Text textAlign="center" color="white" fontSize="25px" mt="50px">
@@ -22,7 +25,7 @@ function App() {
       </Text>
 
       <SpeakerList />
-    </Box>
+    </QueryClientProvider>
   );
 }
 

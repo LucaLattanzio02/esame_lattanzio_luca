@@ -1,8 +1,13 @@
-import { useCallback, useEffect, useState } from "react";
+import { useQuery } from "react-query";
 import { getApiTrack } from "../api/api";
-import { TrackApiType } from "../Type/TrackApiType";
 
 export const useTracks = () => {
+  
+  const {isLoading, isError, data, error} = useQuery('trackList', getApiTrack)
+
+  return {isLoading, isError, data, error};
+  
+  /*
   const [trackList, setTrackList] = useState<TrackApiType[]>();
 
   const fetchTrackList = useCallback(async () => {
@@ -16,4 +21,5 @@ export const useTracks = () => {
   }, [fetchTrackList]);
 
   return { trackList, setTrackList };
+  */
 };

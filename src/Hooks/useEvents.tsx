@@ -1,8 +1,12 @@
-import { useState, useCallback, useEffect } from "react";
+import { useQuery } from "react-query";
 import { getApiEvents } from "../api/api";
-import { EventApiType } from "../Type/EventApiType";
 
 export const useEvents = () => {
+  
+  const {data} = useQuery('eventList', getApiEvents)
+
+  return {data};
+  /*
   const [EventList, setEventList] = useState<EventApiType[]>();
 
   const fetchEventList = useCallback(async () => {
@@ -16,4 +20,5 @@ export const useEvents = () => {
   }, [fetchEventList]);
 
   return { EventList, setEventList };
+  */
 };
