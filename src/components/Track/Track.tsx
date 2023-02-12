@@ -27,6 +27,7 @@ export const Track = ({ track }: Trackprops) => {
         alt="img"
         ml="10px"
         borderRadius="10px"
+        mt="30px"
       />
       <Stack>
         <CardBody>
