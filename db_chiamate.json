@@ -79,7 +79,7 @@
           "id": 4,
           "id_event": 1,
           "time": "11:43 - 12:10",
-          "title": "You’re probably using Lighthouse wrong: How we misuse most common tool to measure web performance?",
+          "title": "Web performance?",
           "description": "These days web performance is one of the most important things everyone wants to optimize on their apps, and it's clear to everyone how dramatic the impact of a poorly optimized website is on business. Yet we as an industry completely fail in recognizing its complexity and widely misuse the most common tool to measure it — Google Lighthouse. If you’re one of those people thinking that good performance equals a good Lighthouse score, you’ve also fallen into this trap and this talk is for you. You will learn when the Google Lighthouse audit results can trick you and how to make good decisions based on its output.",
           "image": "https://images.jsworldconference.com/filip_rakowski_db50aa744f.png?width=100"
         }
