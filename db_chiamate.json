@@ -7,45 +7,125 @@
     }
   ],
 
-  "tracks": [
+  "DateTracks":[
     {
       "id": 1,
-      "id_event": 1,
-      "time": "10:04 - 10:31",
       "date": "February 8th 2023",
-      "title": "Building Age Of Empires 2 with React: Rise of the Browser",
-      "description": "How better to learn about the capabilities of a technology than to do something it was expressly not designed for? What can we learn about the square peg as we mercilessly shove it into the triangular hole? In an attempt to rebuild Age of Empires 2 using React we'll learn about the limitations and possibilities of the tool we use everyday.",
-      "image": "https://images.jsworldconference.com/Zz_Ym_Cfi_Z_400x400_2_Joe_Hart_e1f62002a8.jpg?width=100"
+      "tracks": [
+        {
+          "id": 1,
+          "id_event": 1,
+          "time": "10:04 - 10:31",
+          "title": "Building Age Of Empires 2 with React: Rise of the Browser",
+          "description": "How better to learn about the capabilities of a technology than to do something it was expressly not designed for? What can we learn about the square peg as we mercilessly shove it into the triangular hole? In an attempt to rebuild Age of Empires 2 using React we'll learn about the limitations and possibilities of the tool we use everyday.",
+          "image": "https://images.jsworldconference.com/Zz_Ym_Cfi_Z_400x400_2_Joe_Hart_e1f62002a8.jpg?width=100"
+        },
+        {
+          "id": 2,
+          "id_event": 1,
+          "time": "10:31 - 10:58",
+          "title": "State of Storybook 7",
+          "description": "Storybook 7 is our first major release in 2.5 years. During this time we’ve been working hard to bring you a new level of stability, performance improvements and features. We’re excited to share what we’ve been working on. - Refreshed UI and performance (We’ve also refreshed the core UI patterns with subtle visual refinements, UX tweaks, and faster load times) - Interaction testing and test-runner - Simpler setup and maintainability: first-class Vite support, new frameworks integrations like Next.js, etc.",
+          "image": "https://images.jsworldconference.com/yann_braga_square_e5634b3592.png?width=100"
+        },
+        {
+          "id": 3,
+          "id_event": 1,
+          "time": "10:58 - 11:43",
+          "title": "Morning Break",
+          "description": "Time to smell the love in every sip of sweet, delicious, creamy coffee. It's like a love letter in a cup, without the sappy handwriting.",
+          "image": "https://www.creativefabrica.com/wp-content/uploads/2019/12/16/coffee-line-art-vector-icon-Graphics-1-580x386.jpg"
+        },
+        {
+          "id": 4,
+          "id_event": 1,
+          "time": "11:43 - 12:10",
+          "title": "The Root of Auth Thingz",
+          "description": "An exploration into authorization (AuthZ) and the models we use to think about permissions in graphql. A lot of in depth implementations mainly tackle role-based or attribute-based model systems. This talk will go down the rabbit hole of relationship-based or graph-based permission models and how we can leverage it in conjunction with graphql to improve the authorization story for distributed and federated graphs.",
+          "image": "https://images.jsworldconference.com/ashley_narcisse_8c1bc5dcc9.jpg?width=100"
+        }
+      ]
     },
+
     {
       "id": 2,
-      "id_event": 1,
-      "time": "10:31 - 10:58",
-      "date": "February 8th 2023",
-      "title": "State of Storybook 7",
-      "description": "Storybook 7 is our first major release in 2.5 years. During this time we’ve been working hard to bring you a new level of stability, performance improvements and features. We’re excited to share what we’ve been working on. - Refreshed UI and performance (We’ve also refreshed the core UI patterns with subtle visual refinements, UX tweaks, and faster load times) - Interaction testing and test-runner - Simpler setup and maintainability: first-class Vite support, new frameworks integrations like Next.js, etc.",
-      "image": "https://images.jsworldconference.com/yann_braga_square_e5634b3592.png?width=100"
+      "date": "February 9th 2023",
+      "tracks": [
+        {
+          "id": 1,
+          "id_event": 1,
+          "time": "10:04 - 10:31",
+          "title": "Playing your tests wright",
+          "description": "It's time to play your tests wright. Let's take a look at how to write good tests and cover some of the best practices for testing, choosing the right locators and more. Let's make testing easy and fun by generating tests on user actions. Then lets explore some cool tips and tricks to help you write better testsPlaywright allows us to capture videos, screenshots, and other artifacts on failure, making tracing too easy. And more!",
+          "image": "https://images.jsworldconference.com/debby_o_briend_5a0bf9f312.webp"
+        },
+        {
+          "id": 2,
+          "id_event": 1,
+          "time": "10:31 - 11:16",
+          "title": "Morning Break",
+          "description": "Time to smell the love in every sip of sweet, delicious, creamy coffee. It's like a love letter in a cup, without the sappy handwriting.",
+          "image": "https://www.creativefabrica.com/wp-content/uploads/2019/12/16/coffee-line-art-vector-icon-Graphics-1-580x386.jpg"
+        },
+        {
+          "id": 3,
+          "id_event": 1,
+          "time": "11:16 - 11:43",
+          "title": "How Vue Drives Global Trade",
+          "description": "Have you ever wondered how a product you shopped online reached your doorstep? Did you know that the Vue ecosystem powers one of the largest e-commerce websites in the world? In this talk you will be taken through how Vue influences the journey of a product around the world, and how Maersk, a global integrator in logistics, uses Vue to simplify the global supply chain.",
+          "image": "https://images.jsworldconference.com/Mariam_1_4b5d30a94b.jpg?width=100"
+        },
+        {
+          "id": 4,
+          "id_event": 1,
+          "time": "11:43 - 12:10",
+          "title": "You’re probably using Lighthouse wrong: How we misuse most common tool to measure web performance?",
+          "description": "These days web performance is one of the most important things everyone wants to optimize on their apps, and it's clear to everyone how dramatic the impact of a poorly optimized website is on business. Yet we as an industry completely fail in recognizing its complexity and widely misuse the most common tool to measure it — Google Lighthouse. If you’re one of those people thinking that good performance equals a good Lighthouse score, you’ve also fallen into this trap and this talk is for you. You will learn when the Google Lighthouse audit results can trick you and how to make good decisions based on its output.",
+          "image": "https://images.jsworldconference.com/filip_rakowski_db50aa744f.png?width=100"
+        }
+      ]
     },
+
     {
       "id": 3,
-      "id_event": 1,
-      "time": "10:58 - 11:43",
-      "date": "February 8th 2023",
-      "title": "Morning Break",
-      "description": "Time to smell the love in every sip of sweet, delicious, creamy coffee. It's like a love letter in a cup, without the sappy handwriting.",
-      "image": "https://www.creativefabrica.com/wp-content/uploads/2019/12/16/coffee-line-art-vector-icon-Graphics-1-580x386.jpg"
-    },
-    {
-      "id": 4,
-      "id_event": 1,
-      "time": "11:43 - 12:10",
-      "date": "February 8th 2023",
-      "title": "The Root of Auth Thingz",
-      "description": "An exploration into authorization (AuthZ) and the models we use to think about permissions in graphql. A lot of in depth implementations mainly tackle role-based or attribute-based model systems. This talk will go down the rabbit hole of relationship-based or graph-based permission models and how we can leverage it in conjunction with graphql to improve the authorization story for distributed and federated graphs.",
-      "image": "https://images.jsworldconference.com/ashley_narcisse_8c1bc5dcc9.jpg?width=100"
+      "date": "February 10th 2023",
+      "tracks": [
+        {
+          "id": 1,
+          "id_event": 1,
+          "time": "10:00 - 10:27",
+          "title": "Proven Pinia Patterns",
+          "description": "With Vue's new-and-improved state management library, we gain a much more modular tool. While being more flexible and lacking the Mutations of Vuex, Pinia presents us with more opportunities to be creative, for better or worse, with our app architecture and how state management is conducted and organized within it. This talk explores some @posva-approved best practices and architectural design patterns to consider when using Pinia in production.",
+          "image": "https://images.jsworldconference.com/adam_jahr_786e5d8c3f.webp"
+        },
+        {
+          "id": 2,
+          "id_event": 1,
+          "time": "10:27 - 10:54",
+          "title": "Routing and new features",
+          "description": "Introducing Unplugin Vue Router. A build time plugin to simplify your routing with modern features like Automatic file based Routing in Vue with TS support",
+          "image": "https://images.jsworldconference.com/eduardo_san_martin_morote_64d6c9d59e.webp"
+        },
+        {
+          "id": 3,
+          "id_event": 1,
+          "time": "10:54 - 11:49",
+          "title": "Morning Break",
+          "description": "Time to smell the love in every sip of sweet, delicious, creamy coffee. It's like a love letter in a cup, without the sappy handwriting.",
+          "image": "https://www.creativefabrica.com/wp-content/uploads/2019/12/16/coffee-line-art-vector-icon-Graphics-1-580x386.jpg"
+        },
+        {
+          "id": 4,
+          "id_event": 1,
+          "time": "11:49 - 12:21",
+          "title": "Technical dive into Histoire + Vite",
+          "description": "Histoire is A new way to write stories to showcase and document your components",
+          "image": "https://images.jsworldconference.com/guillaume_chau_08f264c87c.webp"
+        }
+      ]
     }
   ],
-
+  
   "speakers": [
     {
       "id": 1,

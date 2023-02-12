@@ -16,15 +16,6 @@ GET http://localhost:3006/events/{{id}} HTTP/1.1
 
 ###
 
-# ELENCO DEGLI TRACKS
-GET http://localhost:3006/tracks HTTP/1.1
-
-###
-
-# SINGOLO TRACK
-GET http://localhost:3006/tracks/{{id}} HTTP/1.1
-
-###
 
 # ELENCO DEGLI SPEAKERS
 GET http://localhost:3006/speakers HTTP/1.1
@@ -33,5 +24,15 @@ GET http://localhost:3006/speakers HTTP/1.1
 
 # SINGOLO SPEAKER
 GET http://localhost:3006/speakers/{{id}} HTTP/1.1
+
+###
+
+# DATE
+GET http://localhost:3006/DateTracks HTTP/1.1
+
+###
+
+# SINGOLa DATA
+GET http://localhost:3006/DateTracks/2 HTTP/1.1
 
 ###
