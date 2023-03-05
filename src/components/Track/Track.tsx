@@ -1,7 +1,7 @@
 import { Text, Image, Card, CardBody, Heading, Stack } from "@chakra-ui/react";
 import { Container } from "@chakra-ui/react";
-import { TrackApiType } from "../../Type/TrackApiType";
 import { BiTimeFive } from "react-icons/bi";
+import { TrackApiType } from "../../Type/TrackApiType";
 
 type Trackprops = {
   track: TrackApiType;

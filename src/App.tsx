@@ -1,6 +1,6 @@
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Day1 from "./pages/Day1";
 import Day2 from "./pages/Day2";
 import Day3 from "./pages/Day3";

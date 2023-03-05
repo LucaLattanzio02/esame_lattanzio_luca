@@ -1,5 +1,6 @@
-import { TracksDataType } from "../../Type/TrackApiType"
+
 import {Box, Text} from "@chakra-ui/react"
+import { TracksDataType } from "../../Type/TrackApiType";
 import { Track } from "../Track/Track"
 
 type DateTracksprops = {

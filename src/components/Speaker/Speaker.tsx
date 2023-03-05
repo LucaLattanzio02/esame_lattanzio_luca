@@ -1,6 +1,6 @@
 import { Text, Card, CardBody, Heading, Stack } from "@chakra-ui/react";
-import { SpeakerApiType } from "../../Type/SpeakerApiType";
 import { Image } from "@chakra-ui/react";
+import { SpeakerApiType } from "../../Type/SpeakerApiType";
 
 type Speakerprops = {
   speakers: SpeakerApiType;

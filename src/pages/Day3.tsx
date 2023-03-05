@@ -4,7 +4,6 @@ import { EventList } from "../components/EventList/EventList";
 import { SpeakerList } from "../components/SpeakerList/SpeakerList";
 import { TrackList3 } from "../components/TrackList/TrackList3";
 
-
 function Day3() {
   return (
     <Box>

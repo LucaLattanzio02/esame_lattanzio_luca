@@ -1,6 +1,6 @@
 import { Container } from "@chakra-ui/react";
-import { EventApiType } from "../../Type/EventApiType";
 import { Text } from "@chakra-ui/react";
+import { EventApiType } from "../../Type/EventApiType";
 
 type Eventprops = {
     events: EventApiType;
